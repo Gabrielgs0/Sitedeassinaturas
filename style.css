@@ -1,0 +1,330 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+
+/**********************************/
+/* Variáveis
+/**********************************/
+:root{
+	--ff-priwary: "nunito", Helvetica, arial, sans-serif;
+
+	--clr-blue-light: #16B3F7;
+	--clr-green-light: #0bf96a;
+	--clr-pink-dark: #e10bf9;
+	--clr-yellow-light: #EDF250;
+	--clr-white: #f5f5f5;
+}
+
+/**********************************/
+/* Estilos gerais
+/**********************************/
+
+body{
+	background-color: var(--clr-white);
+	font-family: var(--ff-priwary);
+}
+a,
+a:hover,
+a:active,
+a:link,
+a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+hr{
+	border: none;
+	background-color: var(--clr-pink-dark);
+	height: 2px;
+	width: 140px;
+	margin: 20px auto;
+}
+
+p{
+	line-height: 21.82px;
+	padding: 0 10px;
+}
+
+.section-titulo{
+	text-align: center;
+	font-size: 3rem;
+	margin-bottom: 10px;
+}
+
+.section-titulo > span{
+	text-shadow: 2px 2px 6px ;
+}
+
+img{
+	display: block;
+	max-width: 100%;
+}
+
+video{
+	display: block;
+	max-width: 100%;
+}
+/**********************************/
+/* Menu
+/**********************************/
+
+.menu-container{
+	background-color: var(--clr-green-light);
+}
+
+.menu{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 960px;
+	margin: 0 auto;
+	flex-wrap: wrap;
+}
+
+.menu-logo{
+	margin: 10px;
+}
+
+.nav-list{
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+.nav-link{
+	padding: 20px 10px;
+}
+
+
+/**********************************/
+/* Header
+/**********************************/
+
+.intro{
+	font-weight: bold;
+	font-size: 3rem;
+	text-align: center;
+	margin: 0 auto;
+	padding: 25px 0;
+}
+
+
+
+/**********************************/
+/* Quem somos
+/**********************************/
+
+.somos{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.somos-c{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.somos-texto{
+	flex-wrap: wrap;
+}
+.somos-video{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	
+}
+
+/**********************************/
+/* Categorias
+/**********************************/
+
+.categorias{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.categoria-c{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.categoria{
+	 width: 280px;
+	 margin: 0 auto;
+}
+
+.categoria-titulo{
+	font-size: 1.5rem;
+	text-align: center;
+	margin: 10px 0 5px 0;
+}
+
+
+/**********************************/
+/* Planos
+/**********************************/
+
+.planos{
+	background-color: var(--clr-green-light);
+}
+.planos-c{
+	max-width: 960px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.plano{
+	width: 290px;
+	margin: 10px;
+	border: 2px solid var(--clr-white);
+}
+
+
+.plano-titulo{
+	font-size: 3rem;
+	font-weight: bold;
+	text-align: center;
+	margin: 10px auto;
+	text-shadow: 2px 2px 6px ;
+}
+
+.plano-preco{
+	font-size: 3rem;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	text-shadow: 2px 2px 6px ;
+}
+
+.plano-preco sup{
+	position: relative;
+	font-size: 1.5rem;
+	top: -20px;
+}
+
+.plano-divisor{
+	background-color: var(--clr-white);
+	width: 20px;
+	margin: 5px auto;
+}
+
+.plano-lista{
+	max-width: 195px;
+	margin: 0 auto;
+	font-size: 18px;
+}
+
+.plano-lista-item{
+	margin: 10px 0;
+	font-style: italic;
+	display: flex;
+	align-items: center;
+	
+}
+
+.plano-lista-item::before{
+	content: "";
+	display: block;
+	width: 5px;
+	height: 5px;
+	background-color: var(--clr-white);
+	border-radius: 5px;
+	margin-right: 5px;
+}
+
+.plano-btn-comprar{
+	display: block;
+	max-width: 180px;
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 15px auto;
+	text-align: center;
+	text-transform: uppercase;
+	border: 2px solid var(--clr-white);
+	text-shadow: 2px 2px 6px ;
+}
+
+.plano:last-child{
+	background-color: var(--clr-yellow-light);
+}
+
+.plano:last-child, .plano:last-child .plano-btn-comprar{
+	border: 2px solid var(--clr-blue-light);
+}
+
+.plano:last-child .plano-lista-item::before, .plano:last-child .plano-divisor{
+	background: var(--clr-blue-light);
+}
+
+
+
+/**********************************/
+/* Roda pé
+/**********************************/
+
+.context-dark, .bg-gray-dark, .bg-primary {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-classic a, .footer-classic a:focus, .footer-classic a:active {
+    color: #ffffff;
+}
+.nav-list li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+	margin-left: 15px;
+	margin-top: 20px;
+}
+
+.nav-list li a:hover:before {
+    margin-left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 23px;
+    font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+}
+.social-container .col {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.nav-list li a:before {
+    content: "\f14f";
+    font: 400 21px/1 "Material Design Icons";
+    color: #4d6de6;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: -28px;
+    margin-right: 7px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .22s ease;
+}
+
+@media (max-width: 528px){
+	.somos-video{
+		width: 100px;
+	}
+
+}
